@@ -1,65 +1,68 @@
 <?php
 
+//require_once("./index2.php");
+require_once("./index3.php");
+
 // $meuNome = "Marla Ingridh";
 // echo "Meu nome: " . $meuNome;
 
-echo date("d/m/Y"); echo "<br/>";
-echo date("d/m/y"); echo "<br/>";
-echo date("d/M/Y"); echo "<br/>";
+// echo date("d/m/Y"); echo "<br/>";
+// echo date("d/m/y"); echo "<br/>";
+// echo date("d/M/Y"); echo "<br/>";
 
-date_default_timezone_set("American/Manaus");
-echo date("d/m/Y h:i:s"); echo "<br/>";
-
-
-
-echo strlen("Marla Ingridh");  echo "<br/>";
-
-print_r([1,2,3,4]); echo "<br/>";
-
-print_r(explode(",","3,4,5,6")); echo "<br/>";
-
-$idades = "10,20,30,40";
-$array = explode(",",$idades);
-print_r($idades); echo "<br/>";
-print_r($array); echo "<br/>";
-echo str_replace("a","e","casa"); echo "<br/>";
+// date_default_timezone_set("American/Manaus");
+// echo date("d/m/Y h:i:s"); echo "<br/>";
 
 
-function remove_espacos($frase){
-    return str_replace(" ","",$frase);
-}
 
-$texto = "Adoro programar em PHP!";
+// echo strlen("Marla Ingridh");  echo "<br/>";
 
-echo remove_espacos($texto);
+// print_r([1,2,3,4]); echo "<br/>";
 
+// print_r(explode(",","3,4,5,6")); echo "<br/>";
 
-echo strtoupper("marla ingridh"); echo "<br/>";
-
-echo strtolower("MARLA MINUSCULA"); echo "<br/>";
-
-echo trim("1      Lorem     1"); echo "<br/>";
-
-echo json_encode(["meuArray"=>1,"teste"=>2]); echo "<br/>";
-
-$jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
-
-print_r(json_decode($jsonobj));
-
-echo "<br/>";
+// $idades = "10,20,30,40";
+// $array = explode(",",$idades);
+// print_r($idades); echo "<br/>";
+// print_r($array); echo "<br/>";
+// echo str_replace("a","e","casa"); echo "<br/>";
 
 
-function maiorMenorIdade($idade){
-    if($idde<18){
-        echo "Menor de idade";
-        return;
-    }
-    echo "Maior de Idade";
-}
+// function remove_espacos($frase){
+//     return str_replace(" ","",$frase);
+// }
 
-maiorMenorIdade(25);
+// $texto = "Adoro programar em PHP!";
 
-echo "<br/>";
+// echo remove_espacos($texto);
+
+
+// echo strtoupper("marla ingridh"); echo "<br/>";
+
+// echo strtolower("MARLA MINUSCULA"); echo "<br/>";
+
+// echo trim("1      Lorem     1"); echo "<br/>";
+
+// echo json_encode(["meuArray"=>1,"teste"=>2]); echo "<br/>";
+
+// $jsonobj = '{"Peter":35,"Ben":37,"Joe":43}';
+
+// print_r(json_decode($jsonobj));
+
+// echo "<br/>";
+
+
+// function maiorMenorIdade($idade){
+//     if($idde<18){
+//         echo "Menor de idade";
+//         return;
+//     }
+//     echo "Maior de Idade";
+// }
+
+// maiorMenorIdade(25);
+
+// echo "<br/>";
 
 // for($i=0;$i<5;$i++){
 //     echo $i+1 .". Olá <br/>";
@@ -91,4 +94,4 @@ echo "<br/>";
 // }
 
 
-echo file_get_contents("arquivo.pdf");
+//echo file_get_contents("arquivo.pdf");
